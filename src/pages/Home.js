@@ -32,7 +32,7 @@ class Home extends Component {
     todo.id = Math.random();
 
     if(this.state.todos.find(t => t.content === todo.content)){
-      return
+      return;
     } else{
       // Create a array that contains the current array and the new todo item
       let new_list = [...this.state.todos, todo];
